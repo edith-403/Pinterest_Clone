@@ -1,0 +1,305 @@
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* *{
+    border: 1px solid red;
+} */
+
+body, html {
+    border:0.5%;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 2000px) {
+
+
+    .menu_principal {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 5vh;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0.5%;
+        margin: 0.8%;
+    }
+
+    .menu_principal div, form {
+        margin: 0.25%;
+    }
+
+    .logo, .notifications, .messages, .profile, .accounts_options {
+        padding: 0.25%;
+    }
+    .menu_principal .home, .create{
+        display: flex;
+        height: 100%;
+        width: 4%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        font-weight: bolder;
+
+    }
+
+    .menu_principal .home {
+        background-color: black;
+        color: aliceblue;
+    }
+    .logo img{
+        height: 24px;
+        width: auto;
+    }
+
+    .profile img{
+        height: 24px;
+        width: auto;
+        border-radius: 999px;
+
+    }
+
+    .tableros_desktop span a {
+        font-family: system-ui;
+        font-size: 1.3em;
+        font-weight: bolder;
+    }
+
+    .accounts_options button {
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    @media screen and (min-width: 407px){
+
+        .busqueda {
+            display: flex;
+            background-color:transparent;
+            border:none;
+            background-color: rgb(219, 219, 219);
+            border-radius: 999px;
+            width: 75%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .busqueda input{
+            border: transparent;
+            background-color: transparent;
+            outline: none;
+            align-items: center;
+            width: 100%;
+            font-size: medium;
+        }
+
+        form, label {
+            display: flex;
+            width: 97%;
+            height: 100%;
+            align-items: center;
+
+        }
+
+        
+        .lupa {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+        }
+        
+        #search {
+            color: #585858;
+            width: 100%;
+        }
+
+        .tableros_desktop .all {
+            display: none;
+        }
+        
+    }
+
+
+    main {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0.5em;
+    }
+
+    .tableros_desktop {
+        display: flex;
+        width: 100vw;
+        height: 17%;
+        margin-top: 2em;
+        margin-bottom: 2.5em;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .tableros_desktop div{
+        display: flex;
+        width: 10vw;
+        height: 11vh;
+        margin: 0.4%;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .tablero1, .tablero3 {
+        background-color: #bdbab1;
+        
+    }
+
+    .tablero2, .tablero4 {
+        background-color: #a4a3a4;
+    }
+
+    .tableros_desktop span {
+        display: flex;
+        width: 60%;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        font-family: system-ui;
+        font-size: 0.9em;
+    }
+
+    .tableros_desktop a {
+        font-family: system-ui;
+        font-size: 1.3em;
+        font-weight: bolder;
+    }
+
+    .img_big {
+        border-radius: 18px;
+        width: 100%;
+        /* width: 15em;
+        height: 25em; */
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 14px;
+    }
+
+    .img_medium {
+        border-radius: 18px;
+        width: 100%;
+        /* width: 15em;
+        height: 20em; */
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 14px;
+
+    }
+
+    .img_small {
+        border-radius: 18px;
+        width: 100%;
+
+        /* width: 15em;
+        height: 15em; */
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 14px;
+    }
+
+    section {
+        columns: 7;
+        margin: 4em;
+        margin-top: 1em;
+        margin-right: 6em;
+        column-gap: 1em;
+        justify-content: center;
+    }
+
+    .tableros_movile {
+        display: none;
+    }
+
+    footer {
+        display: none;
+
+    }
+
+}
+
+@media (max-width: 500px) {
+    
+    .tableros_desktop {
+        margin: 1%;
+        width: 100vw;
+        
+    }
+    
+    .tableros_desktop div {
+        background-color: transparent;
+        width: 25vw;
+        height: 4vh;
+        font-size: 0.8em;
+        justify-content: flex-start;
+    }
+
+    .tableros_desktop  div span{
+        display: none;
+    }
+
+    .tableros_desktop .tablero4 {
+        display: none;
+    }
+
+
+    .tableros_desktop  div a {
+        display: inline;
+         margin: 10px;
+         height: 5%;
+         text-overflow: ellipsis;
+    }
+
+    .tableros_desktop .all {
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 8px;
+    }
+
+    header {
+        display: none;
+    }
+
+    section {
+        columns: 2;
+        margin-top: 1em;
+        margin-left: 0;
+        column-gap: 1em;
+        justify-content: center;
+        margin-right: 1.4em;
+
+    }
+
+    main {
+        margin: 0;
+    }
+    
+    footer {
+        display: flex;
+        position: fixed;
+        background-color: aliceblue;
+        width: 100vw;
+        height: 5%;
+        padding: 0.8%;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        bottom: 0;
+        z-index: 1000;
+        align-items: center;
+    }
+}
